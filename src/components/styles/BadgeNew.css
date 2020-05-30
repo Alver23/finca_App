@@ -1,0 +1,15 @@
+.BadgeNew__hero {
+  width: 100%;
+  padding: 2rem 0;
+  background: url('https://res.cloudinary.com/imagesfull/image/upload/v1587758568/like/stars_jwrc2k.svg'),
+    #1b1b25;
+  background-repeat: repeat;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.BadgeNew__hero img {
+  max-height: 100px;
+}

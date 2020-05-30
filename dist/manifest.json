@@ -1,0 +1,16 @@
+{
+  "short_name": "Finca",
+  "name": "FincaApp",
+  "icons": [
+    {
+      "src": "../src/assets/favicon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#1c3643",
+  "background_color": "#ffffff"
+}
