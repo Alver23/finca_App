@@ -12,7 +12,7 @@ const baseUrl = "https://finca-api.jorgevelasquez006.now.sh/trabajos";
       dispatch({ type: GET_BADGES, payload: data });
       let total = 0;
       data.forEach((item) => (total += parseInt(item.costo)));
-      
+
       var value = total;
       const formatterPeso = new Intl.NumberFormat("es-CO", {
         style: "currency",
@@ -34,8 +34,6 @@ export function getBadges() {
       const { data } = await response.data;
       let total = 0;
       data.forEach((item) => (total += parseInt(item.costo)));
-      console.log(total);
-      /*  dispatch({ type: GET_BADGES, payload: data }); */
       dispatch({ type: GET_BADGES, payload: { data, total } });
     } catch (error) {
       dispatch({ type: ERROR, payload: error });

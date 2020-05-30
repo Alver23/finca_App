@@ -14,7 +14,7 @@ export default function (state = initialState, action) {
     case GET_BADGES:
       return {
         ...state,
-        badges: action.payload,
+        badges: action.payload.data,
         total: action.payload.total,
         loading: false,
       };
